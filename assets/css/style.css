@@ -1,7 +1,14 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;   
 }
+:root {
+    --color1: rgba(93, 186, 106, 1);
+    --color2: rgba(0, 62, 41, 1);
+    --color3: rgba(46, 63, 126, 1);
+    --color4: rgba(169, 203, 105, 1);
+}    
 body {
     color:rgb(37, 65, 19);
     font-family: Helvetica, Arial, sans-serif;
@@ -14,10 +21,14 @@ header {
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 header h1 {
+    font-family:cursive;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 34px;
     color: rgb(34, 69, 11);
     margin: 0;
     align-items: center;
@@ -75,6 +86,7 @@ header nav ul li a {
     line-height: 1.2;
     padding-left: 20px;
     border-left: 2px solid;
+    text-align: center;
 }
 .about-me h2 {
     font-style:normal;
@@ -83,7 +95,7 @@ header nav ul li a {
     width: 90%;
     text-align: center;
     margin: 3.5%;
-    align-items: center;    
+    align-items: center; 
 }
 .abot-me img {
     margin-top: 3.5%;
@@ -99,15 +111,52 @@ header nav ul li a {
     align-items: center;
     width: 33%;
 }
-.about-me > * {   
-   /* margin:15px;*/
-   /* align-items: center;*/
+.col-2 h2 {
+    text-align: center;
+}
+/*.about-me > * {   
+   /*margin:15px;
+   align-items: center;
 }   
 
-/*.flex-row {
+.flex-row {
 
     display:flex;
 }*/
+
+/* Contact Me styles start */
+
+.contact-me h2 {
+    background-color: #ffd900bf;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.contact-me ul {
+    background-color: #ffd900bf;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .contact-me ul li a {
+    padding: 35px;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .contact-me ul li a:hover {
+    color: var(--color2);
+    text-shadow: 0 0 20px var(--color3);
+  }
+  /* end Contact Me styles */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -121,27 +170,25 @@ header nav ul li a {
 @media screen and (max-width: 575px) {
 }
 
-/*.section-title {
-width: 95%;
-}
-about-me p {
-width: 100%;
+/*.about-me {
+    position: absolute;
+    bottom: 0;
 }*/
-
 .round-img {
     max-width: 150px;
 }
 
-.our-imgs {
+.my-imgs {
     width: 100%;
 }
 
 .text-div {
     position: absolute;
     bottom: 0;
-    background-color: antiquewhite;
+    
 }
 
-.our-col {
+
+.my-col {
     position: relative !important;
 }
