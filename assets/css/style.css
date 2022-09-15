@@ -1,62 +1,68 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
-:root {
-    --color1: rgba(93, 186, 106, 1);
-    --color2: rgba(0, 62, 41, 1);
-    --color3: rgba(46, 63, 126, 1);
-    --color4: rgba(169, 203, 105, 1);
-}    
+
 body {
-    color:rgb(37, 65, 19);
+    color: rgb(37, 65, 19);
     font-family: Helvetica, Arial, sans-serif;
 }
+
 /* HEADER / NAV BAR STYLES START */
 
 header {
     padding: 20px 35px;
     background-color: #678d4e;
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
+
 header h1 {
-    font-family:cursive;
+    font-family: cursive;
     font-weight: bold;
     font-size: 34px;
     color: rgb(34, 69, 11);
     margin: 0;
     align-items: center;
     padding: 5px;
-    
+
 }
+
 header a {
     text-decoration: none;
     color: rgb(37, 65, 19);
-    
+
 }
-header nav {    
-    margin: 7px 0;    
+
+header nav {
+    margin: 7px 0;
 }
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*align-items: center;*/
-    list-style: none;   
+    list-style: none;
 }
+
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
-    text-decoration: underline; 
-}     
+    font-size: 18px;
+    text-decoration: underline;
+}
+
 /* HEADER / NAVBAR STYLES END */
+
+
+/* HERO STYLES START */
+
 .hero {
     display: flex;
     background-size: cover;
@@ -64,75 +70,90 @@ header nav ul li a {
     background-image: url("../images/hero-bg.png");
     justify-content: right;
 }
+
 .hero h2 {
-    
     background-color: #ffd700c2;
     padding: 10px;
     width: 25%;
-    margin-top: 15%; 
-    text-align:center;
+    margin-top: 10%;
+    text-align: center;
     margin-right: 6%;
     margin-bottom: 0;
 }
-.about-me {
-    display:flex;
-    flex-direction: row;
-    justify-content:right;   
-}
-.about-me p{   
+
+/* HERO STYLES END */
+
+
+/* ABOUT ME STYLES START */
+
+.about-me p {
     margin: 3.5%;
     color: rgb(34, 69, 11);
     font-size: 18px;
     line-height: 1.2;
-    padding-left: 20px;
-    border-left: 2px solid;
+    padding-bottom: 10px;
     text-align: center;
 }
+
 .about-me h2 {
-    font-style:normal;
+    font-style: normal;
     font-size: 35px;
     color: rgb(34, 69, 11);
     width: 90%;
     text-align: center;
     margin: 3.5%;
-    align-items: center; 
+    align-items: center;
 }
-.abot-me img {
+
+.round-img {
     margin-top: 3.5%;
     max-width: 100%;
     height: auto;
     flex: 1;
 }
-.element.style {
-    width: 67%;
+
+.about-me {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
+    flex-direction: row;
+    justify-content: right;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
+
+/* ABOUT ME STYLES END */
+
+
+/* MY WORK STYLES START */
+
 .col-2 h2 {
     text-align: center;
 }
-/*.about-me > * {   
-   /*margin:15px;
-   align-items: center;
-}   
 
-.flex-row {
+.round-img {
+    max-width: 150px;
+}
 
-    display:flex;
-}*/
+.my-imgs {
+    width: 100%;
+}
 
-/* Contact Me styles start */
+.my-col {
+    position: relative !important;
+}
+
+/* MY WORK STYLES END */
+
+
+/* CONTACT ME STYLES START */
 
 .contact-me h2 {
     background-color: #ffd900bf;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin: 0;
+    padding-top: 10px;
 
 }
 
@@ -144,51 +165,29 @@ header nav ul li a {
     justify-content: space-evenly;
     align-items: center;
     margin: 0;
-  }
-  
-  .contact-me ul li a {
+    padding-bottom: 10px;
+}
+
+.contact-me ul li a {
     padding: 35px;
     font-size: 24px;
     text-decoration: none;
-  }
-  
-  .contact-me ul li a:hover {
-    color: var(--color2);
-    text-shadow: 0 0 20px var(--color3);
-  }
-  /* end Contact Me styles */
-
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
 }
 
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
+.contact-me ul li a:hover {
+    text-shadow: 0 0 20px;
 }
+
+/* CONTACT ME STYLES END */
+
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-}
-
-/*.about-me {
-    position: absolute;
-    bottom: 0;
-}*/
-.round-img {
-    max-width: 150px;
-}
-
-.my-imgs {
-    width: 100%;
-}
-
-.text-div {
-    position: absolute;
-    bottom: 0;
-    
-}
-
-
-.my-col {
-    position: relative !important;
+    .about-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
 }
