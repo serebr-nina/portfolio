@@ -5,7 +5,7 @@ This is a simple portfolio showcasing some of my work.
 A purpose of this project was to practice building a web page using HTML and CSS while creating a portfolio that I can use during my job application process.
 
 ## Screenshot
-![My portfolio] (./assets/images/Portfolio-Screen-Shot.png)
+![My Portfolio](./assets/images/Portfolio-Screen-Shot.png)
 
 ## Built With
 * HTML
@@ -13,4 +13,4 @@ A purpose of this project was to practice building a web page using HTML and CSS
 * Bootsrap
 
 ## Website
-[My portfolio] ()
+[My Portfolio](https://serebr-nina.github.io/portfolio/)
